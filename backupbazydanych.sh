@@ -7,7 +7,7 @@ fullpathbackupfile="$backupfolder/$filename"
 logfile="${backupfolder}/backup_log_$timestamp".log
 
 echo "mysqldump started at $timestamp" >> "$logfile"
-wynik=`/usr/bin/mysqldump --user=dawid --password=Dawid12345., --default-character-set=utf8 mydatabase 2>>$logfile`
+wynik=`/usr/bin/mysqldump --user=dawid --password=Te$tO123456789., --default-character-set=utf8 mydatabase 2>>$logfile`
 status=$?
 if [ $status -eq 0 ]; then
 	echo $timestamp ze skryptu OK | tee -a $logfile
